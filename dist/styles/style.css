@@ -10,16 +10,27 @@ html, body {
   box-sizing: inherit;
 }
 
+#content {
+  height: 100%;
+}
+
 #site-header {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   background-color: #011627;
   color: #FDFFFC;
   padding: 10px;
-  height: 76px;
+  height: 10%;
   z-index: 1;
+}
+
+@media (max-width: 420px) {
+  #site-header {
+    justify-content: right;
+  }
 }
 
 .site-header-title {
@@ -27,10 +38,15 @@ html, body {
   font-size: 4em;
 }
 
+@media (max-width: 420px) {
+  .site-header-title {
+    font-size: 3em;
+  }
+}
+
 #site-nav-button {
   position: absolute;
-  top: 10px;
-  left: 50px;
+  top: 25%;
   background-color: #011627;
   background-image: url(../images/menu.png);
   background-size: contain;
@@ -38,6 +54,19 @@ html, body {
   height: 50px;
   border: 1px solid transparent;
   border-radius: 3px;
+}
+
+@media (max-width: 420px) {
+  #site-nav-button {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+  #site-nav-button {
+   left: 10px;
+  }
 }
 
 .site-nav {
@@ -61,6 +90,12 @@ html, body {
   font-size: 2em;
   text-align: center;
   line-height: 60px;
+}
+
+@media (max-width: 420px) {
+  .site-nav-list li {
+    font-size: 1.5em;
+  }
 }
 
 .inactive {
