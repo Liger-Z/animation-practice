@@ -27,7 +27,7 @@ html, body {
   z-index: 1;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   #site-header {
     justify-content: right;
   }
@@ -38,7 +38,7 @@ html, body {
   font-size: 4em;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   .site-header-title {
     font-size: 3em;
   }
@@ -47,6 +47,7 @@ html, body {
 #site-nav-button {
   position: absolute;
   top: 25%;
+  left: 10px;
   background-color: #011627;
   background-image: url(../images/menu.png);
   background-size: contain;
@@ -56,14 +57,14 @@ html, body {
   border-radius: 3px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   #site-nav-button {
     width: 40px;
     height: 40px;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   #site-nav-button {
    left: 10px;
   }
@@ -92,7 +93,7 @@ html, body {
   line-height: 60px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   .site-nav-list li {
     font-size: 1.5em;
   }
