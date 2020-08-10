@@ -1,0 +1,68 @@
+html, body {
+  background-color: #FDFFFC;
+  font-size: 14px;
+  font-family: "Overpass";
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#site-header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #011627;
+  color: #FDFFFC;
+  padding: 10px;
+  height: 76px;
+  z-index: 1;
+}
+
+.site-header-title {
+  font-family: "Lobster Two";
+  font-size: 4em;
+}
+
+#site-nav-button {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  background-color: #011627;
+  background-image: url(../images/menu.png);
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.site-nav {
+  z-index: 0;
+}
+
+.site-nav-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 60px;
+  font-family: "Allerta Stencil";
+  font-weight: bold;
+}
+
+.site-nav-list li{
+  width: 20%;
+  height: 60px;
+  background-color: #ffa01cb7;
+  color: #011627;
+  font-size: 2em;
+  text-align: center;
+  line-height: 60px;
+}
+
+.inactive {
+  display: none;
+}
