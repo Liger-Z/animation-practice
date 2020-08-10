@@ -27,7 +27,7 @@ html, body {
   z-index: 1;
 }
 
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   #site-header {
     justify-content: right;
   }
@@ -38,9 +38,9 @@ html, body {
   font-size: 4em;
 }
 
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .site-header-title {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 }
 
@@ -64,9 +64,9 @@ html, body {
   }
 }
 
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   #site-nav-button {
-   left: 10px;
+   left: 5%;
   }
 }
 
@@ -95,7 +95,7 @@ html, body {
 
 @media (max-width: 450px) {
   .site-nav-list li {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 
