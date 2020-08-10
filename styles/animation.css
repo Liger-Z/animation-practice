@@ -1,0 +1,77 @@
+.site-header-title.animate {
+  animation-name: showTitle;
+  animation-duration: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes showTitle {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.site-header-title.reverse-animate {
+  animation-name: reverseShowTitle;
+  animation-duration: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes reverseShowTitle {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+#site-nav-button {
+  transition: 200ms;
+}
+
+#site-nav-button.clicked {
+  background-color: #FF9F1C;
+}
+
+#site-nav-button:hover {
+  background-color: #FF9F1C;
+}
+
+.site-nav-list.animate {
+  animation-name: openMenu;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: fowards;
+}
+
+@keyframes openMenu {
+  0% {
+    opacity: 0;
+    transform:translateY(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform:translateY(0px);
+  }
+}
+
+.site-nav-list li{
+  transition: 200ms ease-in-out;
+}
+
+.site-nav-list li:hover {
+  background-color: #FF9F1C;
+}
