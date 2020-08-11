@@ -46,10 +46,6 @@
   background-color: #FF9F1C;
 }
 
-#site-nav-button:hover {
-  background-color: #FF9F1C;
-}
-
 .site-nav-list.animate {
   animation-name: openMenu;
   animation-duration: 300ms;
@@ -69,9 +65,32 @@
 }
 
 .site-nav-list li{
-  transition: 200ms ease-in-out;
+  transition: 150ms ease-in-out;
 }
 
 .site-nav-list li:hover {
   background-color: #FF9F1C;
+}
+
+.image-carousel-button:hover {
+  background-color: #e71d35;
+}
+
+.image-carousel-button.clicked {
+  animation-name: pressDown;
+  animation-duration: 150ms;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes pressDown {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+
+.slide-image {
+  transition: 500ms ease-in-out; 
 }

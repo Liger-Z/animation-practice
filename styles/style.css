@@ -99,6 +99,55 @@ html, body {
   }
 }
 
+.image-carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 5% auto;
+  width: 90%;
+  max-width: 990px;
+  height: 75%;
+}
+
+.image-carousel-arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-carousel {
+  display: flex;
+  flex-direction: row;
+  flex-flow: nowrap;
+  overflow: hidden;
+  width: 100%;
+  max-width: 990px;
+  height: 90%;
+  max-height: 570px;
+  border: 15px solid #EAEAEA;
+  box-shadow: 0px 0px 30px gray;
+  border-radius: 5px;
+}
+
+.image-carousel-button {
+  padding: 5px 20px;
+  background-color: #e71d35d3;
+  color: #FDFFFC;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: "Sigmar One";
+  box-shadow: 0px 2px 5px gray;
+}
+
+.slide-image {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 960px;
+}
+
 .inactive {
   display: none;
 }
